@@ -1,0 +1,187 @@
+/* Welcome page */
+.welcome {
+    height: 100vh;
+    width: 100%;
+    background-color: #232323;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: white;
+    overflow: hidden;
+}
+
+.welcome-navbar {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.welcome-navbar img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.welcome-navbar button {
+    padding: 12px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+.welcome-navbar button:hover {
+    background-color: #fff;
+    color: black;
+}
+
+.welcome-content {
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.welcome h1 {
+    text-transform: uppercase;
+}
+
+.welcome-content p {
+    font-size: 14px;
+    color: gray;
+}
+
+.welcome-cards {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 70px;
+}
+
+.welcome-card {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 7px 20px 0px rgba(255, 255, 255, 0.2);
+    -moz-box-shadow: 0px 7px 20px 0px rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 7px 20px 0px rgba(255, 255, 255, 0.2);
+    height: 400px;
+    position: relative;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.expert {
+    background: url("../assets/expert.jpg");
+    background-size: cover;
+    /* Rasmni to'liq joylashtiradi */
+    background-position: center;
+    /* Rasmni markazga joylashtiradi */
+    background-repeat: no-repeat;
+    /* Rasmni takrorlamaydi */
+    position: relative;
+    z-index: 0;
+    filter: blur(2px);
+}
+
+.journal {
+    background: url("../assets/journal.jpg");
+    background-size: cover;
+    /* Rasmni to'liq joylashtiradi */
+    background-position: center;
+    /* Rasmni markazga joylashtiradi */
+    background-repeat: no-repeat;
+    /* Rasmni takrorlamaydi */
+}
+
+.chat {
+    background: url("../assets/friendship.jpg");
+    background-size: cover;
+    /* Rasmni to'liq joylashtiradi */
+    background-position: center;
+    /* Rasmni markazga joylashtiradi */
+    background-repeat: no-repeat;
+    /* Rasmni takrorlamaydi */
+}
+
+.welcome-card-img {
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    cursor: pointer;
+    position: relative;
+}
+
+.welcome-card__hover {
+    display: none;
+    transition: all 1s;
+}
+
+.welcome-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    color: black;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+.welcome-card:hover::before {
+    background-color: #050505;
+}
+
+.welcome-card:hover .welcome-card__hover {
+    display: flex;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.welcome-card__hover button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: transparent;
+    cursor: pointer;
+    border: 2px solid #fff;
+    outline: none;
+    color: white;
+    font-weight: bold;
+    transition: all 1s;
+}
+
+.welcome-card__hover button:hover {
+    background-color: #fff;
+    color: black;
+}
+
+.welcome-card {
+    transition: all 1s;
+    transform: translateY(80px);
+}
+
+
+.active {
+    transform: translateY(20px);
+}
+
+.welcome-card:hover {
+    transform: translateY(20px);
+}
