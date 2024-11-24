@@ -1,6 +1,4 @@
 /* Login */
-
-
 .login {
     display: flex;
     height: 100vh;
@@ -218,4 +216,59 @@
 
 .link-to__login a:hover {
     color: #073980;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 100px;
+    background-color: #fff;
+    height: calc(100vh - 40px);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    border-radius: 20px;
+    -webkit-box-shadow: -1px 3px 12px -3px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: -1px 3px 12px -3px rgba(34, 60, 80, 0.2);
+    box-shadow: -1px 3px 12px -3px rgba(34, 60, 80, 0.2);
+}
+
+.sidebar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.sidebar-navigation {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    flex-direction: column;
+    width: 100%;
+}
+
+.sidebar-navigation__items {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+.sidebar-navigation__items i {
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    transition: all 0.5s;
+    border-radius: 10px;
+}
+
+.sidebar-navigation__items i:hover {
+    border-right: 2px solid #000;
+    background-color: #e4e9f4;
 }
