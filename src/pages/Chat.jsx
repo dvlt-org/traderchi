@@ -12,7 +12,6 @@ export default function Chat() {
         setChatInput(input)
     }
 
-
     return (
         <div className='chat-page'>
             <Sidebar />
