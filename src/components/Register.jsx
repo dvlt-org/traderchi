@@ -1,4 +1,5 @@
 import React from 'react'
+import "./components.css"
 
 export default function Register() {
   return (
@@ -13,21 +14,35 @@ export default function Register() {
           <label>Full Name</label>
           <div className='register-form__input'>
             <i className="fa-regular fa-user"></i>
-            <input type="text" placeholder='Ismingizni kiriting !' />
+            <input type="name" placeholder='Ismingizni kiriting !' />
           </div>
         </div>
         <div className='register-form__number register-form__container'>
           <label>Mobile number</label>
           <div className='register-form__input'>
             <i className="fa-solid fa-phone"></i>
-            <input type="text" placeholder=' telefon raqamingizni kiriting !' />
+            <input type="number" placeholder=' telefon raqamingizni kiriting !' />
           </div>
         </div>
         <div className='register-form__container'>
           <label>Email</label>
           <div className='form-email__input register-form__input'>
             <i className="fa-regular fa-envelope"></i>
-            <input type="text" placeholder=' elektron pochtani kiriting !' />
+            <input type="email" placeholder=' elektron pochtani kiriting !' />
+          </div>
+        </div>
+        <div className='register-form__container'>
+          <label>Password</label>
+          <div className='form-email__input register-form__input'>
+            <i className="fa-solid fa-lock"></i>
+            <input type="password" placeholder='Hisob parolini kiriting !' />
+          </div>
+        </div>
+        <div className='register-form__container'>
+          <label>Confirm</label>
+          <div className='form-email__input register-form__input'>
+            <i className="fa-solid fa-check"></i>
+            <input type="password" placeholder='Parolga ishonch hosil qiling !' />
           </div>
         </div>
         <div className='button-container'>
